@@ -58,7 +58,7 @@ jobs:
 
       - name: Update Image Tag in YAML
         run: |
-          sed -i "s|image: .*k8s-frontend:.*|image: rayusingh/k8s-frontend:${IMAGE_TAG}|g" manifests/k8s/frontend.yaml
+          sed -i "s|image: .*k8s-frontend:.*|image: rayusingh/k8s-frontend:${IMAGE_TAG}|g" k8s/frontend.yaml
 
       - name: Commit and Push Changes
         run: |
