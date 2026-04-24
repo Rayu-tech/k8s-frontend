@@ -51,7 +51,7 @@ jobs:
         with:
           repository: Rayu-tech/aws-eks-3tier-k8s-stack
           token: ${{ secrets.GH_PAT }}
-          path: manifests
+          path: k8s
 
       - name: Set Image Tag from Build
         run: echo "IMAGE_TAG=${{ needs.build.outputs.image_tag }}" >> $GITHUB_ENV
