@@ -3,7 +3,7 @@ name: Build and Push Docker Imager
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
